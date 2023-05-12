@@ -97,12 +97,15 @@ a {
   gap: 40px;
 }
 .nav-items .nav-item a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: right;
   text-transform: uppercase;
   color: #FFFFFF;
+  opacity: 0.9;
 }
 .nav-items .nav-item a:hover {
   color: #F67E7E;
@@ -354,6 +357,62 @@ footer {
 }
 
 #home {
-  background: url(../../images/home/women.png);
-  max-width: 100%;
+  padding-top: 100px;
+  background: url(../../assets/images/home/women.png) no-repeat;
+  background-size: cover;
+}
+
+.home {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.home h6 {
+  font-family: "Roboto Condensed";
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.home h1 {
+  max-width: 592px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 82px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.home button {
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #ffd2a4;
+  color: #1c1d28;
+  margin-bottom: 64px;
+}
+.home button:hover {
+  background-color: #f2c79b;
+}
+.home p {
+  max-width: 308px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
