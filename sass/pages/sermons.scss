@@ -1,3 +1,221 @@
 @use '../global';
 @use '../components/top-sermon';
+@use '../components/sermon-card';
+@use '../utils/variables' as var;
+@use "../utils/mixin" as mixin;
 
+.main__top{
+    display: flex;
+    flex-direction: column;
+    padding-top: 115px;
+    &__texts{
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        h6{
+            @include mixin.title-6;
+        }
+        h2{
+            max-width: 554px;
+            @include mixin.title-2;
+        }
+    }
+    &__card{
+        display: flex;
+        height: 539px;
+        margin-bottom: 48px;
+        &__left{
+            background: #FFF5EB;
+            padding: 32px 32px 61px 89px;
+            .date{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 33px;
+                h5{
+                    @include mixin.title-5;
+                }
+                h6{
+                    @include mixin.title-6;
+                }
+            }
+            .top__left__main{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                p{
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+                h5{
+                    max-width: 210px;
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                    max-width: 210px;
+                    @include mixin.title-5;
+                }
+                h6{
+                    width: 256px;
+                    margin-bottom: 32px;
+                    max-width: 320px;
+                    @include mixin.title-6;
+                    font-weight: 400;
+                    text-transform: none;
+                    opacity: 0.78;
+                }
+                .schedules{
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 16px;
+                    .schedule{
+                        display: flex;
+                        &__right{
+                            margin-left: 16px;
+                            display: flex;
+                            align-items: start;
+                            flex-direction: column;
+                            h6{
+                                margin-bottom: 5px;
+                                @include mixin.title-6;
+                                font-weight: 400;
+                                text-transform: none;
+                                opacity: 1;
+                            } 
+                        }
+                    }
+                }
+                .register{
+                    margin-top: 32px;
+                    @include mixin.secondary-btn;
+                }
+            }
+        }
+        &__right{
+            width: 100%;
+            background: url('../../assets/images/sermons/card/main__top__card/1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__sermons{
+        .sermons{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 11px;
+            @include mixin.title-5;
+            text-transform: none;
+            font-weight: 400;
+        }
+    }
+}
+.main__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    gap: 64px;
+    h2{
+        @include mixin.title-2;
+    }
+    .cards__row {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-column-gap: 24px;
+
+        .card {
+            background: #FFF5EB;
+            padding: 24px 26px 80px 42px;
+            gap: 60px;
+            .date {
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                flex-direction: column;
+
+                h5 {
+                    @include mixin.title-5;
+                }
+
+                h6 {
+                    @include mixin.title-6;
+                }
+            }
+
+            .top__left__main {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                p {
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+
+                h5 {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                    max-width: 210px;
+                    @include mixin.title-5;
+                }
+
+                h6 {
+                    max-width: 210px;
+                    margin-bottom: 32px;
+                    @include mixin.title-6;
+                    font-weight: 400;
+                    text-transform: none;
+                    opacity: 0.78;
+                }
+
+                .schedules {
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .schedule {
+                        display: flex;
+
+                        &__right {
+                            margin-left: 16px;
+                            display: flex;
+                            align-items: start;
+                            flex-direction: column;
+
+                            h6 {
+                                margin-bottom: 5px;
+                                @include mixin.title-6;
+                                font-weight: 400;
+                                text-transform: none;
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed";
 }
 
 *,
@@ -47,4 +49,312 @@ header button {
 }
 header button:hover {
   background-color: #f2c79b;
+}
+
+.header {
+  max-width: 100%;
+  height: 432px;
+  background: url("../../assets/images/sermons/header__home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__texts {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.header__texts h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.header__texts h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #161722;
+  text-transform: uppercase;
+}
+
+.main__top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 115px;
+}
+.main__top__texts {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.main__top__texts h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__top__texts h2 {
+  max-width: 554px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__top__card {
+  display: flex;
+  height: 539px;
+  margin-bottom: 48px;
+}
+.main__top__card__left {
+  background: #FFF5EB;
+  padding: 32px 32px 61px 89px;
+}
+.main__top__card__left .date {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 33px;
+}
+.main__top__card__left .date h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__top__card__left .date h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__top__card__left .top__left__main {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.main__top__card__left .top__left__main p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main__top__card__left .top__left__main h5 {
+  max-width: 210px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 210px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__top__card__left .top__left__main h6 {
+  width: 256px;
+  margin-bottom: 32px;
+  max-width: 320px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-transform: none;
+  opacity: 0.78;
+}
+.main__top__card__left .top__left__main .schedules {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+}
+.main__top__card__left .top__left__main .schedules .schedule {
+  display: flex;
+}
+.main__top__card__left .top__left__main .schedules .schedule__right {
+  margin-left: 16px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.main__top__card__left .top__left__main .schedules .schedule__right h6 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-transform: none;
+  opacity: 1;
+}
+.main__top__card__left .top__left__main .register {
+  margin-top: 32px;
+  padding: 24px 64px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #161722;
+  color: #ffd2a4;
+}
+.main__top__card__left .top__left__main .register:hover {
+  color: #fff;
+}
+.main__top__card__right {
+  width: 100%;
+  background: url("../../assets/images/sermons/card/main__top__card/1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main__top__sermons .sermons {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 11px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161722;
+  text-transform: uppercase;
+  text-transform: none;
+  font-weight: 400;
+}
+
+.main__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 128px;
+  margin-bottom: 128px;
+  gap: 64px;
+}
+.main__bottom h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__bottom .cards__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 24px;
+}
+.main__bottom .cards__row .card {
+  background: #FFF5EB;
+  padding: 24px 26px 80px 42px;
+  gap: 60px;
+}
+.main__bottom .cards__row .card .date {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__bottom .cards__row .card .date h5 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__bottom .cards__row .card .date h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__bottom .cards__row .card .top__left__main {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.main__bottom .cards__row .card .top__left__main p {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main__bottom .cards__row .card .top__left__main h5 {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 210px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #161722;
+  text-transform: uppercase;
+}
+.main__bottom .cards__row .card .top__left__main h6 {
+  max-width: 210px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-transform: none;
+  opacity: 0.78;
+}
+.main__bottom .cards__row .card .top__left__main .schedules {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+}
+.main__bottom .cards__row .card .top__left__main .schedules .schedule {
+  display: flex;
+}
+.main__bottom .cards__row .card .top__left__main .schedules .schedule__right {
+  margin-left: 16px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.main__bottom .cards__row .card .top__left__main .schedules .schedule__right h6 {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #161722;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-transform: none;
+  opacity: 1;
 }
