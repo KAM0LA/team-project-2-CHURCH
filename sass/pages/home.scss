@@ -1,0 +1,8 @@
+@use '../global';
+@use '../components/top-sermon';
+@use "../components/header";
+
+#home{
+    background: url(../../images/home/women.png);
+    max-width: 100%;
+}
