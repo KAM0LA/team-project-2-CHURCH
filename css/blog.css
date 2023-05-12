@@ -97,12 +97,15 @@ a {
   gap: 40px;
 }
 .nav-items .nav-item a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: right;
   text-transform: uppercase;
   color: #FFFFFF;
+  opacity: 0.9;
 }
 .nav-items .nav-item a:hover {
   color: #F67E7E;

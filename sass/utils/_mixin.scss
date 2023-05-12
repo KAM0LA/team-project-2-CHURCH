@@ -14,7 +14,7 @@
   -o-border-radius: 12px;
 }
 
-@mixin primary-btn($padding) {
+@mixin primary-btn($padding: 24px 64px) {
   @include btn($padding);
   background-color: var.$primary-color;
   color: #1c1d28;
