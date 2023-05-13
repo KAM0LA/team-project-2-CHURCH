@@ -1,3 +1,18 @@
+// Loader
+
+window.addEventListener('DOMContentLoaded', () =>{
+
+    const loader = document.querySelector('.loader')
+    
+    setTimeout(() =>{
+        loader.style.opacity = '0';
+        setTimeout(() => {
+            loader.style.display = 'none'
+        }, 500)
+    }, 2000)
+    
+    })
+
 function openNavbar() {
     document.getElementById("navbar-responsive").style.right = "0";
     document.body.classList.toggle("opacity");
@@ -43,3 +58,4 @@ function shrink() {
 AOS.init({
     duration: 1000
 });
+
