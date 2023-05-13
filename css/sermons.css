@@ -338,24 +338,158 @@ footer {
     padding: 22px 20px;
   }
 }
-.header {
+header {
+  background-color: #161722;
+}
+header .contact {
+  padding: 20px 48px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #ffd2a4;
+  color: #1c1d28;
+}
+header .contact:hover {
+  background-color: #f2c79b;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #161722;
+  z-index: 1000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 12px 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  align-items: center;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  transition: 0.6s;
+}
+
+#navbar-responsive {
+  transition: 0.8s;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  gap: 40px;
+}
+.nav-items .nav-item a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+.nav-items .nav-item a:hover {
+  color: #F67E7E;
+}
+
+.close {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+}
+.close img {
+  width: 32px;
+}
+
+.hamburger {
+  display: none;
+  margin-top: -3px;
+  text-align: end;
+  border: none;
+  background-color: transparent;
+}
+.hamburger img {
+  width: 32px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 30px 0;
+  }
+  #navbar-responsive {
+    background: url(../../images/home/navbar-responsive.png) no-repeat 100% 100%;
+    background-color: #161722;
+    opacity: 1 !important;
+  }
+  .nav-right {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    height: 100%;
+    width: 65%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nav-items {
+    margin-top: -250px;
+    margin-left: -100px;
+    margin-bottom: 36px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .hamburger,
+  .close {
+    display: block;
+  }
+}
+header .header {
   max-width: 100%;
   height: 432px;
   background: url("../../assets/images/sermons/header__home.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.header .container {
+header .header .container {
   height: 100%;
   display: flex;
   align-items: center;
 }
-.header__texts {
+header .header__texts {
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-.header__texts h6 {
+header .header__texts h6 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -363,7 +497,7 @@ footer {
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-.header__texts h2 {
+header .header__texts h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
@@ -514,6 +648,12 @@ footer {
 }
 .main__top__card__left .top__left__main .register:hover {
   color: #fff;
+  box-shadow: 0px 5px 20px 1px black;
+  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
 }
 .main__top__card__right {
   width: 100%;
@@ -560,6 +700,19 @@ footer {
   background: #FFF5EB;
   padding: 24px 26px 80px 42px;
   gap: 60px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.main__bottom .cards__row .card:hover {
+  box-shadow: 0px -5px 10px 10px #e5e5e5;
+  transform: translateY(20px);
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
 }
 .main__bottom .cards__row .card .date {
   display: flex;
@@ -645,4 +798,216 @@ footer {
   font-weight: 400;
   text-transform: none;
   opacity: 1;
+}
+
+@media (max-width: 1270px) {
+  .main__bottom .cards__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 30px;
+  }
+}
+@media (max-width: 866px) {
+  .main__top__card {
+    display: flex;
+    flex-direction: column;
+    height: 1078px;
+  }
+  .main__top__card__right {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .main__top__card__left {
+    padding-left: 10px;
+  }
+  .main__bottom .cards__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}
+footer {
+  padding-top: 100px;
+  background-color: #161722;
+}
+
+.footer {
+  padding: 64px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 100px;
+}
+.footer-left__info h6 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.footer-left__info p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.footer-item {
+  margin-left: 70px;
+  margin-bottom: 24px;
+}
+.footer-item a {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.78;
+}
+.footer-item:first-child a {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 1;
+}
+
+.footer__more h3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.footer__more p i {
+  margin-top: 20px;
+  margin-right: 20px;
+  color: #FFD2A4;
+  cursor: pointer;
+}
+
+.footer-right__title h1 {
+  margin-bottom: 32px;
+  max-width: 440px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.footer__input {
+  position: relative;
+}
+.footer__input input {
+  padding: 20px;
+  max-width: 311px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+}
+.footer__input button {
+  padding: 20px 48px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  transition: 0.5s;
+  text-transform: uppercase;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-color: #ffd2a4;
+  color: #1c1d28;
+  padding: 22px 64px;
+  position: absolute;
+  right: 10px;
+}
+.footer__input button:hover {
+  background-color: #f2c79b;
+}
+
+@media (max-width: 1300px) {
+  .footer__input button {
+    padding: 22px 32px;
+    right: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .footer {
+    grid-template-columns: 1fr;
+  }
+  .footer-left {
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  .footer-item {
+    margin-left: 50px;
+  }
+  .footer-right__title h1 {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer__input input {
+    max-width: 100%;
+  }
+  .footer__input button {
+    position: absolute;
+    right: -10px;
+  }
+}
+@media (max-width: 500px) {
+  .cards__row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer-left {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0;
+  }
+  .footer-item {
+    margin-left: 0px;
+  }
+  .footer__more p i {
+    margin: 30px 10px 0;
+  }
+  .footer__our-team {
+    margin-left: 0;
+  }
+  .footer__input button {
+    padding: 22px 20px;
+  }
 }
