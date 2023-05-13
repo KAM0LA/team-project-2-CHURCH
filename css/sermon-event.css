@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -47,4 +48,193 @@ header button {
 }
 header button:hover {
   background-color: #f2c79b;
+}
+
+* {
+  font-family: "Roboto Condensed";
+}
+
+main {
+  background-color: #F5F2F0;
+}
+
+.serevent_container {
+  padding: 128px 0 100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.serevent__left {
+  max-width: 630px;
+}
+.serevent__leftserevent__img {
+  max-width: 100%;
+}
+.serevent__left .serevent__img_descs span {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+  color: #DC9853;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.serevent__left .serevent__img_descs h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+.serevent__left .serevent__img_descs p {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161722;
+  opacity: 0.78;
+}
+.serevent__left .lorem_ipsum {
+  margin-bottom: 30px;
+  padding-left: 20px;
+  border-left: 1px solid #FFD2A4;
+}
+.serevent__left .lorem_ipsum p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #161722;
+  opacity: 0.78;
+}
+
+.rEGISTER_nOW {
+  max-width: 522px;
+  height: 100%;
+  padding: 40px 70px 40px 40px;
+  background: #F7F8FA;
+}
+.rEGISTER_nOW h4 {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+.rEGISTER_nOW .oclock_adress {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: start;
+  gap: 18px;
+}
+.rEGISTER_nOW .oclock_adress_items {
+  max-width: 205px;
+  display: flex;
+  align-items: start;
+}
+.rEGISTER_nOW .oclock_adress_items img {
+  margin-right: 10px;
+}
+.rEGISTER_nOW label {
+  display: block;
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #232536;
+  opacity: 0.6;
+}
+.rEGISTER_nOW input {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  padding: 8px 0px;
+  border: none;
+  opacity: 0.2;
+  border-bottom: 1px solid #232536;
+}
+.rEGISTER_nOW input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  z-index: 10;
+}
+.rEGISTER_nOW input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  z-index: 10;
+}
+.rEGISTER_nOW button {
+  padding: 24px 64px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: #1C1D28;
+  background: #FFD2A4;
+}
+.rEGISTER_nOW button:hover {
+  background: #F2C79B;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+@media (max-width: 1300px) {
+  .serevent_container {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1200px) {
+  .serevent_container {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 800px) {
+  .serevent_container {
+    padding: 100px 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .serevent__img {
+    width: 350px;
+  }
+  .serevent__imgimg {
+    width: 100%;
+  }
+}
+#Upcoming_Sermons .Up_serms_h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #161722;
+}
+
+.Up_serms_card_items {
+  width: 305px;
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 80px;
+  background: #FFFFFF;
 }
