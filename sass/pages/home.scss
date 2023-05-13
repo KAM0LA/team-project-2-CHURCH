@@ -7,9 +7,13 @@
 
 #home{
     padding-top: 100px;
-    max-width: 100%;
     background: url(../../assets/images/home/women.png) no-repeat;
     background-size: cover;
+}
+@media (max-width : 1000px){
+    #home{
+        max-width: 100%;
+    }
 }
 
 .home {
@@ -70,8 +74,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 24px;
-
-        .card{
+     .card{
             padding: 80px;
             background: #FFF5EB; 
             .card__item{
