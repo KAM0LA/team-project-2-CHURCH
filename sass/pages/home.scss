@@ -3,9 +3,11 @@
 @use "../utils/variables" as var;
 @use '../components/top-sermon';
 @use "../components/header";
+@use "../base/typography";
 
 #home{
     padding-top: 100px;
+    max-width: 100%;
     background: url(../../assets/images/home/women.png) no-repeat;
     background-size: cover;
 }
@@ -14,7 +16,7 @@
     padding-top: 60px;
     padding-bottom: 80px;
 
-    h6 {
+    &__title6 {
         font-family: 'Roboto Condensed';
         margin-bottom: 16px;
         font-style: normal;
@@ -25,9 +27,8 @@
         color: #FFFFFF;
     }
 
-    h1 {
+    &__title1 {
         max-width: 592px;
-        font-family: 'Roboto Condensed';
         font-style: normal;
         margin-bottom: 32px;
         font-weight: 700;
@@ -38,12 +39,12 @@
         color: #FFFFFF;
     }
 
-    button {
+    &__btn {
         @include mixin.primary-btn;
         margin-bottom: 64px;
     }
 
-    p {
+    &__text {
         max-width: 308px;
         font-family: 'Roboto Condensed';
         font-style: normal;
@@ -52,5 +53,470 @@
         line-height: 24px;
         color: #FFFFFF;
     }
-
 }
+.title{
+    padding-top: 128px;
+    padding-bottom: 64px;
+    text-align: center;
+    h6{
+       @include mixin.title-6;
+    }
+    h2{
+        @include mixin.title-2;
+    }
+}
+.cards{
+        padding-bottom: 128px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+
+        .card{
+            padding: 80px;
+            background: #FFF5EB; 
+            .card__item{
+                h4{
+                    padding-top: 24px;
+                    @include mixin.title-4;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #161722;
+                }
+            }    
+        }
+}
+.love__title{
+    text-align: center;
+    h6{
+        padding-bottom: 35px;
+        @include mixin.title-6;
+     }
+     h2{
+         @include mixin.title-2;
+     }
+     .text{
+        padding-top: 32px;
+        padding-bottom: 56px;
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #161722; 
+         }
+     }
+     button{
+        @include mixin.primary-btn;
+     }
+}
+.love__img{
+    padding-top: 8px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    img{
+        max-width: 100%;
+    }
+    & .img2{
+        padding-top: 72px;
+    }
+}
+.love__footer{
+    padding-top: 64px;
+    text-align: center;
+    h6{
+        @include mixin.title-6;  
+    }
+    h2{
+        @include mixin.title-2;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #161722; 
+     }
+     &__end {
+        padding-bottom: 128px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #161722;
+     }
+}
+#benefit{
+    background: #F5F2F0;
+    .benefits{
+        h6{
+            padding-top: 128px;
+            text-align: center;
+            @include mixin.title-6;  
+        }
+        h2{
+            text-align: center;
+            @include mixin.title-2;
+        }
+       &__card{
+        padding-top: 64px;
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        column-gap: 24px;
+       }
+    }
+}
+#join{
+    .join__title{
+        padding-bottom: 64px;
+        h6{
+            padding-top: 128px;
+            text-align: center;
+            @include mixin.title-6;  
+        }
+        h2{
+            text-align: center;
+            @include mixin.title-2;
+        } 
+    }
+    .main__top__card{
+        display: flex;
+        height: 539px;
+        margin-bottom: 48px;
+        &__left{
+            background: #FFF5EB;
+            padding: 32px 32px 61px 89px;
+            .date{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                flex-direction: column;
+                margin-left: 33px;
+                h5{
+                    @include mixin.title-5;
+                }
+                h6{
+                    @include mixin.title-6;
+                }
+            }
+            .top__left__main{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                p{
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+                h5{
+                    max-width: 210px;
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                    max-width: 210px;
+                    @include mixin.title-5;
+                }
+                h6{
+                    width: 256px;
+                    margin-bottom: 32px;
+                    max-width: 320px;
+                    @include mixin.title-6;
+                    font-weight: 400;
+                    text-transform: none;
+                    opacity: 0.78;
+                }
+                .schedules{
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    gap: 16px;
+                    .schedule{
+                        display: flex;
+                        &__right{
+                            margin-left: 16px;
+                            display: flex;
+                            align-items: start;
+                            flex-direction: column;
+                            h6{
+                                margin-bottom: 5px;
+                                @include mixin.title-6;
+                                font-weight: 400;
+                                text-transform: none;
+                                opacity: 1;
+                            } 
+                        }
+                    }
+                }
+                .register{
+                    margin-top: 32px;
+                    @include mixin.secondary-btn;
+                }
+            }
+        }
+        &__right{
+            width: 100%;
+            background: url('../../assets/images/home/a-man-and-woman-wearing-angel-costumes-8513040.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .join__footer{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: end;
+        a{
+          padding-top: 3px;
+        }
+    }
+}
+#serve{
+    padding-top: 100px;
+    padding-bottom: 128px;
+    max-width: 100%;
+    background: url(../../assets/images/home/background.png) no-repeat;
+    background-size: cover;
+    
+
+    .serve__cards{
+        margin-left: 250px;
+        max-width: 768px;
+        background: #FFFFFF;
+        .serve__card{
+            padding: 72px 48px;
+            display: flex;
+            gap: 117px;
+            align-items: center;
+            &__content{
+                h2{
+                    @include mixin.title-2;
+                }   
+                p{
+                    padding-bottom: 16px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #161722; 
+                }
+                button{
+                    @include mixin.primary-btn;
+                }
+            }
+        }
+    }
+}
+.share{
+    &__title{
+        h6{
+            padding-top: 128px;
+            text-align: center;
+            @include mixin.title-6;  
+        }
+        h2{
+            text-align: center;
+            @include mixin.title-2;
+        }  
+    }
+    &__cards{
+        padding-top: 64px;
+        padding-bottom: 128px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+        .share__card{
+            padding: 48px 32px;
+            background: #FFF5EB;
+            &__item{
+                .text1{
+                    padding-bottom: 16px;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                    letter-spacing: 0.08em;
+                    text-transform: uppercase;
+                    background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    text-fill-color: transparent;
+                }
+                h5{
+                    padding-bottom: 16px;
+                    @include mixin.title-5;
+                }
+                .text2{
+                    padding-bottom: 48px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #161722;
+                    opacity: 0.78;
+                }
+                .text3{
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #161722;
+                }
+                time{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #161722; 
+                }
+            }
+        }
+    }
+}
+
+// loader
+// .loader {
+//     position: fixed;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: var.$black;
+//     transition: 0.5s;
+//     z-index: 10000;
+// }
+
+// .loading{
+//     width:100px;
+//     height:100px;
+//     margin:30px auto;
+//     position:fixed;
+//     top: 50%;
+//     left: 50%;
+//     margin-left: -50px;
+//     margin-top: -50px;
+// }
+
+// .loading.bar div{
+//     width: 100px;
+//     height: 30px;
+//     background: white;
+//     position: absolute;
+//     top: 35px;
+//     left: 45px;
+//     opacity:0.05;
+//     -webkit-animation: fadeit 1.1s linear infinite;
+//     -moz-animation: fadeit 1.1s linear infinite;
+//     animation: fadeit 1.1s linear infinite;
+//       top: 50%;
+//     left: 50%;
+//     margin-left: -50px;
+//     margin-top: -50px;
+// }
+
+// .loading.bar div:nth-child(1){
+//     -webkit-transform: rotate(0deg) translate(0, -30px);
+//     -moz-transform: rotate(0deg) translate(0, -30px);
+//     transform: rotate(0deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:0.39s;
+//     -moz-animation-delay:0.39s;
+//     animation-delay:0.39s;
+// } 
+
+// .loading.bar div:nth-child(2){
+//     -webkit-transform: rotate(45deg) translate(0, -30px);
+//     -moz-transform: rotate(45deg) translate(0, -30px);
+//     transform: rotate(45deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:0.52s;
+//     -moz-animation-delay:0.52s;
+//     animation-delay:0.52s;
+// } 
+
+// .loading.bar div:nth-child(3){
+//     -webkit-transform: rotate(90deg) translate(0, -30px);
+//     -moz-transform: rotate(90deg) translate(0, -30px);
+//     transform: rotate(90deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:0.65s;
+//     -moz-animation-delay:0.65s;
+//     animation-delay:0.65s;
+// } 
+
+// .loading.bar div:nth-child(4){
+//     -webkit-transform: rotate(135deg) translate(0, -30px);
+//     -moz-transform: rotate(135deg) translate(0, -30px);
+//     transform: rotate(135deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:0.78s;
+//     -moz-animation-delay:0.78s;
+//     animation-delay:0.78s;
+// } 
+
+// .loading.bar div:nth-child(5){
+//     -webkit-transform: rotate(180deg) translate(0, -30px);
+//     -moz-transform: rotate(180deg) translate(0, -30px);
+//     transform: rotate(180deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:0.91s;
+//     -moz-animation-delay:0.91s;
+//     animation-delay:0.91s;
+// } 
+
+// .loading.bar div:nth-child(6){
+//     -webkit-transform: rotate(225deg) translate(0, -30px);
+//     -moz-transform: rotate(225deg) translate(0, -30px);
+//     transform: rotate(225deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:1.04s;
+//     -moz-animation-delay:1.04s;
+//     animation-delay:1.04s;
+// } 
+
+// .loading.bar div:nth-child(7){
+//     -webkit-transform: rotate(270deg) translate(0, -30px);
+//     -moz-transform: rotate(270deg) translate(0, -30px);
+//     transform: rotate(270deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:1.17s;
+//     -moz-animation-delay:1.17s;
+//     animation-delay:1.17s;
+// } 
+
+// .loading.bar div:nth-child(8){
+//     -webkit-transform: rotate(315deg) translate(0, -30px);
+//     -moz-transform: rotate(315deg) translate(0, -30px);
+//     transform: rotate(315deg) translate(0, -30px); 
+
+//     -webkit-animation-delay:1.3s;
+//     -moz-animation-delay:1.3s;
+//     animation-delay:1.3s;
+// }
+
+// @-webkit-keyframes fadeit{
+//     0%{
+//          opacity:1;
+//     }
+//     100%{
+//          opacity:0;
+//     }
+// }
+// @-moz-keyframes fadeit{
+//     0%{
+//          opacity:1;
+//     }
+//     100%{
+//          opacity:0;
+//     }
+// }
+// @keyframes fadeit{
+//     0%{
+//          opacity:1;
+//     }
+//     100%{
+//          opacity:0;
+//     }
+// }
