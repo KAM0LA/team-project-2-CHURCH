@@ -134,6 +134,7 @@ a {
         display: block;
     }
 }
+
 header {
     .header {
         max-width: 100%;
@@ -165,50 +166,61 @@ header {
         }
     }
 }
-.main__top{
+
+.main__top {
     display: flex;
     flex-direction: column;
     padding-top: 115px;
-    &__texts{
+
+    &__texts {
         margin-bottom: 64px;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 16px;
-        h6{
+
+        h6 {
             @include mixin.title-6;
         }
-        h2{
+
+        h2 {
             max-width: 554px;
             @include mixin.title-2;
         }
     }
-    &__card{
+
+    &__card {
         display: flex;
         height: 539px;
         margin-bottom: 48px;
-        &__left{
+
+        &__left {
             background: #FFF5EB;
             padding: 32px 32px 61px 89px;
-            .date{
+
+            .date {
                 display: flex;
                 align-items: end;
                 justify-content: center;
                 flex-direction: column;
                 margin-left: 33px;
-                h5{
+
+                h5 {
                     @include mixin.title-5;
                 }
-                h6{
+
+                h6 {
                     @include mixin.title-6;
                 }
             }
-            .top__left__main{
+
+            .top__left__main {
                 display: flex;
                 align-items: start;
                 flex-direction: column;
-                p{
+
+                p {
                     font-weight: 700;
                     font-size: 12px;
                     line-height: 14px;
@@ -220,14 +232,16 @@ header {
                     background-clip: text;
                     text-fill-color: transparent;
                 }
-                h5{
+
+                h5 {
                     max-width: 210px;
                     margin-top: 16px;
                     margin-bottom: 16px;
                     max-width: 210px;
                     @include mixin.title-5;
                 }
-                h6{
+
+                h6 {
                     width: 256px;
                     margin-bottom: 32px;
                     max-width: 320px;
@@ -236,43 +250,50 @@ header {
                     text-transform: none;
                     opacity: 0.78;
                 }
-                .schedules{
+
+                .schedules {
                     display: flex;
                     align-items: start;
                     flex-direction: column;
                     gap: 16px;
-                    .schedule{
+
+                    .schedule {
                         display: flex;
-                        &__right{
+
+                        &__right {
                             margin-left: 16px;
                             display: flex;
                             align-items: start;
                             flex-direction: column;
-                            h6{
+
+                            h6 {
                                 margin-bottom: 5px;
                                 @include mixin.title-6;
                                 font-weight: 400;
                                 text-transform: none;
                                 opacity: 1;
-                            } 
+                            }
                         }
                     }
                 }
-                .register{
+
+                .register {
                     margin-top: 32px;
                     @include mixin.secondary-btn;
                 }
             }
         }
-        &__right{
+
+        &__right {
             width: 100%;
             background: url('../../assets/images/sermons/card/main__top__card/1.png');
             background-repeat: no-repeat;
             background-size: cover;
         }
     }
-    &__sermons{
-        .sermons{
+
+    &__sermons {
+        .sermons {
             display: flex;
             align-items: center;
             justify-content: end;
@@ -283,7 +304,8 @@ header {
         }
     }
 }
-.main__bottom{
+
+.main__bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -291,12 +313,14 @@ header {
     margin-top: 128px;
     margin-bottom: 128px;
     gap: 64px;
-    h2{
+
+    h2 {
         @include mixin.title-2;
     }
+
     .cards__row {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-column-gap: 24px;
 
         .card {
@@ -308,15 +332,17 @@ header {
             -moz-transition: 0.5s;
             -ms-transition: 0.5s;
             -o-transition: 0.5s;
-            &:hover{
+
+            &:hover {
                 box-shadow: 0px -5px 10px 10px #e5e5e5;
                 transform: translateY(20px);
                 -webkit-transform: translateY(20px);
                 -moz-transform: translateY(20px);
                 -ms-transform: translateY(20px);
                 -o-transform: translateY(20px);
-}
-            .date{
+            }
+
+            .date {
                 display: flex;
                 align-items: end;
                 justify-content: center;
@@ -335,6 +361,7 @@ header {
                 display: flex;
                 align-items: start;
                 flex-direction: column;
+
                 p {
                     font-weight: 700;
                     font-size: 12px;
@@ -391,18 +418,20 @@ header {
                 }
             }
         }
-        
+
     }
 }
+
 @media (max-width: 1270px) {
-    .main__bottom{
-        .cards__row{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 30px 30px;
+    .main__bottom {
+        .cards__row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 30px 30px;
         }
     }
 }
+
 @media (max-width: 866px) {
     .main__top {
 
@@ -422,23 +451,25 @@ header {
 
 @media (max-width: 500px) {
     .main__top {
-    
-            &__card {
-                &__left {
-                    padding-left: 10px;
-                }
+
+        &__card {
+            &__left {
+                padding-left: 10px;
             }
-    
         }
+
+    }
+
     .main__bottom {
-            .cards__row {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 30px;
-            }
+        .cards__row {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 30px;
         }
-    
+    }
+
 }
+
 footer {
     padding-top: 100px;
     background-color: var.$black;
@@ -595,12 +626,13 @@ footer {
         max-width: 100%;
         text-align: center;
     }
-    
-    .footer__input{
-        & input{
+
+    .footer__input {
+        & input {
             max-width: 100%;
         }
-        & button{
+
+        & button {
             position: absolute;
             right: -10px;
         }
@@ -610,10 +642,11 @@ footer {
 
 
 @media (max-width: 500px) {
-    .cards__row{
+    .cards__row {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .footer-left {
         grid-template-columns: 1fr;
         align-items: center;
