@@ -1,8 +1,56 @@
 @use '../global';
+@use "../utils/mixin" as mixin;
+@use "../utils/variables" as var;
 @use '../components/top-sermon';
 @use "../components/header";
 
 #home{
-    background: url(../../images/home/women.png);
-    max-width: 100%;
+    padding-top: 100px;
+    background: url(../../assets/images/home/women.png) no-repeat;
+    background-size: cover;
+}
+
+.home {
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+    h6 {
+        font-family: 'Roboto Condensed';
+        margin-bottom: 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    h1 {
+        max-width: 592px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        margin-bottom: 32px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 82px;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    button {
+        @include mixin.primary-btn;
+        margin-bottom: 64px;
+    }
+
+    p {
+        max-width: 308px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
 }
