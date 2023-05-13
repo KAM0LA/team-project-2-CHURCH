@@ -79,7 +79,7 @@ a {
   grid-template-columns: 1fr 4fr;
   align-items: center;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   transition: 0.6s;
 }
 
@@ -105,11 +105,11 @@ a {
   line-height: 19px;
   text-align: right;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   opacity: 0.9;
 }
 .nav-items .nav-item a:hover {
-  color: #f67e7e;
+  color: #F67E7E;
 }
 
 .close {
@@ -162,8 +162,7 @@ a {
     flex-direction: column;
     gap: 24px;
   }
-  .hamburger,
-  .close {
+  .hamburger, .close {
     display: block;
   }
 }
@@ -193,7 +192,7 @@ footer {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-top: 32px;
   margin-bottom: 32px;
   cursor: pointer;
@@ -206,7 +205,7 @@ footer {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -221,7 +220,7 @@ footer {
   font-size: 12px;
   line-height: 14px;
   text-align: right;
-  color: #ffffff;
+  color: #FFFFFF;
   opacity: 0.78;
 }
 .footer-item:first-child a {
@@ -236,12 +235,12 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .footer__more p i {
   margin-top: 20px;
   margin-right: 20px;
-  color: #ffd2a4;
+  color: #FFD2A4;
   cursor: pointer;
 }
 
@@ -255,7 +254,7 @@ footer {
   line-height: 44px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .footer__input {
@@ -267,7 +266,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: #FFFFFF;
   opacity: 0.8;
   outline: none;
   background-color: transparent;
@@ -385,7 +384,7 @@ a {
   grid-template-columns: 1fr 4fr;
   align-items: center;
   -moz-column-gap: 40px;
-  column-gap: 40px;
+       column-gap: 40px;
   transition: 0.6s;
 }
 
@@ -411,11 +410,11 @@ a {
   line-height: 19px;
   text-align: right;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   opacity: 0.9;
 }
 .nav-items .nav-item a:hover {
-  color: #f67e7e;
+  color: #F67E7E;
 }
 
 .close {
@@ -540,7 +539,7 @@ header .header__texts h2 {
   margin-bottom: 48px;
 }
 .main__top__card__left {
-  background: #fff5eb;
+  background: #FFF5EB;
   padding: 32px 32px 61px 89px;
 }
 .main__top__card__left .date {
@@ -575,7 +574,7 @@ header .header__texts h2 {
   line-height: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -698,7 +697,7 @@ header .header__texts h2 {
   grid-column-gap: 24px;
 }
 .main__bottom .cards__row .card {
-  background: #fff5eb;
+  background: #FFF5EB;
   padding: 24px 26px 80px 42px;
   gap: 60px;
   transition: 0.5s;
@@ -746,7 +745,7 @@ header .header__texts h2 {
   line-height: 14px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
+  background: linear-gradient(109.61deg, #A54E2B -53.83%, #DC9853 62.61%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -789,13 +788,7 @@ header .header__texts h2 {
   align-items: start;
   flex-direction: column;
 }
-.main__bottom
-  .cards__row
-  .card
-  .top__left__main
-  .schedules
-  .schedule__right
-  h6 {
+.main__bottom .cards__row .card .top__left__main .schedules .schedule__right h6 {
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 16px;
@@ -861,7 +854,7 @@ footer {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   margin-top: 32px;
   margin-bottom: 32px;
   cursor: pointer;
@@ -874,7 +867,7 @@ footer {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -889,7 +882,7 @@ footer {
   font-size: 12px;
   line-height: 14px;
   text-align: right;
-  color: #ffffff;
+  color: #FFFFFF;
   opacity: 0.78;
 }
 .footer-item:first-child a {
@@ -904,12 +897,12 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .footer__more p i {
   margin-top: 20px;
   margin-right: 20px;
-  color: #ffd2a4;
+  color: #FFD2A4;
   cursor: pointer;
 }
 
@@ -923,7 +916,7 @@ footer {
   line-height: 44px;
   letter-spacing: -0.01em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .footer__input {
@@ -935,7 +928,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: #FFFFFF;
   opacity: 0.8;
   outline: none;
   background-color: transparent;
