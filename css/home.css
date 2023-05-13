@@ -358,6 +358,10 @@ footer {
 }
 
 #home {
+<<<<<<< HEAD
+  background: url(../../images/home/women.png);
+  max-width: 100%;
+=======
   padding-top: 100px;
   max-width: 100%;
   background: url(../../assets/images/home/women.png) no-repeat;
@@ -416,6 +420,7 @@ footer {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+<<<<<<< HEAD
 }
 
 .title {
@@ -859,4 +864,7 @@ footer {
   font-size: 16px;
   line-height: 24px;
   color: #161722;
+=======
+>>>>>>> fc457eae704d657550e3500b9410c8be3f02a403
+>>>>>>> 7ff50bb27753f9e5d0e29cfdb4047cc276302d0d
 }
