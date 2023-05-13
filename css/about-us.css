@@ -339,7 +339,7 @@ footer {
   }
 }
 .container-2 {
-  max-width: 1320px;
+  max-width: 1064px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -430,6 +430,7 @@ footer {
 .compassion .compassion_img {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -630,7 +631,7 @@ footer {
   color: #161722;
 }
 .our_team h2 {
-  margin-left: 200px;
+  margin-left: 300px;
   padding-top: 16px;
   display: inline-block;
   text-align: center;

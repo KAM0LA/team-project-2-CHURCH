@@ -4,7 +4,7 @@
 
 .container-2 {
     // 1500-2*110+40=1320
-max-width: 1320px;
+max-width: 1064px;
 margin-left: auto;
 margin-right: auto;
 padding-left: 20px;
@@ -99,6 +99,7 @@ img {
     .compassion_img {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 24px;
     }
 
@@ -320,7 +321,7 @@ span {
     color: #161722;
 }
 h2 {
-    margin-left: 200px;
+    margin-left: 300px;
     padding-top: 16px;
     display: inline-block;
     text-align: center;
